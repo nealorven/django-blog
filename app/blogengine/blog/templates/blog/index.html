@@ -8,8 +8,8 @@
 {% block content %}
     <h2 class="mb-5">Posts:</h2>
 
-    {% for post in posts %}
+    {% for post in page_object.object_list %}
         {% include 'blog/includes/post_card_templates.html' %}
     {% endfor %}
-    
+
 {% endblock %}
